@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Jun 23 20:02:52 CEST 2024
+maven-compat-4.0.0-beta-4-SNAPSHOT.pom>=
+maven-compat-4.0.0-beta-4-SNAPSHOT.jar>=
+maven-compat-4.0.0-beta-4-20240619.084653-24.jar>apache.snapshots=

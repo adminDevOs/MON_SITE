@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.codehaus.modello</groupId>
+    <artifactId>modello</artifactId>
+    <version>2.4.0</version>
+  </parent>
+  <artifactId>modello-plugins</artifactId>
+  <packaging>pom</packaging>
+  <name>Modello Plugins</name>
+  <description>Modello Plugins is the main component containing every Modello plugins that are able to generate various types of
+    code and descriptors.</description>
+
+  <modules>
+    <module>modello-plugin-java</module>
+    <module>modello-plugin-converters</module>
+    <module>modello-plugin-xml</module>
+    <module>modello-plugin-xdoc</module>
+    <module>modello-plugin-xsd</module>
+    <module>modello-plugin-xpp3</module>
+    <module>modello-plugin-stax</module>
+    <module>modello-plugin-jdom</module>
+    <module>modello-plugin-jsonschema</module>
+    <module>modello-plugin-dom4j</module>
+    <module>modello-plugin-jackson</module>
+    <module>modello-plugin-snakeyaml</module>
+    <module>modello-plugin-sax</module>
+    <module>modello-plugin-velocity</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.xmlunit</groupId>
+        <artifactId>xmlunit-core</artifactId>
+        <version>2.10.0</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.eclipse.sisu</groupId>
+      <artifactId>org.eclipse.sisu.plexus</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.modello</groupId>
+      <artifactId>modello-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.modello</groupId>
+      <artifactId>modello-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>copy-test-libs</id>
+              <goals>
+                <goal>copy-dependencies</goal>
+              </goals>
+              <phase>process-test-resources</phase>
+              <configuration>
+                <outputDirectory>${project.build.directory}/test-libs</outputDirectory>
+                <excludeTransitive>false</excludeTransitive>
+                <stripVersion>true</stripVersion>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

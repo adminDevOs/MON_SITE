@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.apache.maven.wagon</groupId>
+  <artifactId>wagon-ssh</artifactId>
+  <versioning>
+    <latest>4.0.0-M1-SNAPSHOT</latest>
+    <versions>
+      <version>3.0.1-SNAPSHOT</version>
+      <version>3.4.4-SNAPSHOT</version>
+      <version>3.5.4-SNAPSHOT</version>
+      <version>4.0.0-M1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20240605052010</lastUpdated>
+  </versioning>
+</metadata>

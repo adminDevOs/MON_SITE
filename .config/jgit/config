@@ -1,0 +1,3 @@
+[filesystem "Debian|17.0.11|/dev/sda1"]
+	timestampResolution = 3735 nanoseconds
+	minRacyThreshold = 7935 microseconds

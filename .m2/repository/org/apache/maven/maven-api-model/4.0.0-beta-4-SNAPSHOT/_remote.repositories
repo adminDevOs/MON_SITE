@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jun 24 10:20:36 CEST 2024
+maven-api-model-4.0.0-beta-4-SNAPSHOT.mdo>=
+maven-api-model-4.0.0-beta-4-SNAPSHOT.pom>=
+maven-api-model-4.0.0-beta-4-SNAPSHOT.jar>=

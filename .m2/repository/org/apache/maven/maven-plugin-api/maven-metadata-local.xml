@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.apache.maven</groupId>
+  <artifactId>maven-plugin-api</artifactId>
+  <versioning>
+    <versions>
+      <version>4.0.0-beta-4-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20240624082005</lastUpdated>
+  </versioning>
+</metadata>
